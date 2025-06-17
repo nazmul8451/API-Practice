@@ -4,6 +4,8 @@ import 'package:device_preview/device_preview.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
+import 'module13/class2.dart';
+
 
 
 //All Package imported
@@ -16,7 +18,7 @@ void main() {
       builder: (context) => const MaterialApp(
         useInheritedMediaQuery: true,
         debugShowCheckedModeBanner: false,
-        home:MainPage( ),
+        home:API_calling( ),
       ), // runApp এর ভিতরে DevicePreview
     ),
   );
