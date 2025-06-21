@@ -40,7 +40,9 @@ class Data {
         this.img,
         this.qty,
         this.unitPrice,
-        this.totalPrice});
+        this.totalPrice
+      }
+      );
 
   Data.fromJson(Map<String, dynamic> json) {
     sId = json['_id'];

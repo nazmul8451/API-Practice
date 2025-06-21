@@ -5,7 +5,7 @@ import 'models/productModel.dart';
 
 class ProductController{
   List<Data>Prdoducts = [];
-
+//------------------------------------------------------
   Future<void> fetchProducts() async{
     final response = await http.get(Uri.parse(Urls.readProduct));
     print(response.statusCode);
@@ -19,5 +19,6 @@ class ProductController{
       throw Exception('Failed to load products');
     }
   }
+//------------------------------------------------------
 }
 
