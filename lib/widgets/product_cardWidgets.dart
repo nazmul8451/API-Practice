@@ -27,8 +27,8 @@ class ProductCard extends StatelessWidget {
             // Product Image
             ClipRRect(
               borderRadius: BorderRadius.vertical(top: Radius.circular(10)),
-              child: Image.asset(
-                "assets/image.jpg",
+              child: Image.network(
+                "${product.img}",
                 height: 100,
                 width: double.infinity,
                 fit: BoxFit.cover,
@@ -39,13 +39,13 @@ class ProductCard extends StatelessWidget {
 
             // Product Details
             Text(
-              "Tohfa",
+              "${product.productName}",
               maxLines: 1,
               overflow: TextOverflow.ellipsis,
               style: TextStyle(fontSize: 14, color: Colors.black87),
             ),
             Text(
-              'Price: 500 | QTY: 23',
+              'Price: ${product.totalPrice} | QTY: ${product.qty}',
               style: TextStyle(fontSize: 12, color: Colors.black54),
             ),
 
